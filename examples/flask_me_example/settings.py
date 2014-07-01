@@ -12,6 +12,7 @@ MONGODB_SETTINGS = {'DB': 'psa_db'}
 DEBUG_TB_INTERCEPT_REDIRECTS = False
 SESSION_PROTECTION = 'strong'
 
+SOCIAL_AUTH_STORAGE = 'social.apps.flask_app.me.models.FlaskStorage'
 SOCIAL_AUTH_LOGIN_URL = '/'
 SOCIAL_AUTH_LOGIN_REDIRECT_URL = '/done/'
 SOCIAL_AUTH_USER_MODEL = 'flask_me_example.models.user.User'
